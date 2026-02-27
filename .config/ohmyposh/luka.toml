@@ -1,0 +1,129 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[palette]
+  black = '#414868'
+  grey = '#414868'
+  blue = '#599bf2'
+  green = '#59C9A5'
+  pgreen = "#81b29a"
+  orange = '#F07623'
+  red = "#c94f6d"
+  white = '#a9b1d6'
+  rwhite = "#ffffff"
+  yellow = "#f6c177"
+  cyan = "#73daca"
+  blue2 = "#4C7BEF"
+  blue3 = "#2E52B9"
+  cyan2 = "#36B3A8"
+  cyan3 = "#1F7C72"
+  magenta = "#bb9af7"
+  nmagenta1 = "#907aa9"
+  nmagenta2 = "#9a80b9"
+  nmagenta3 = "#816b9a"
+  pblue = "#99a7f7"
+  fg="#a9b1d6"
+  bblack="#2A2F41"
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[transient_prompt]
+background = "transparent"
+foreground = "p:green"
+template = "▐ "
+newline = false
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    type = 'os'
+    template = " {{.Icon}} "
+    style = 'diamond'
+    background = 'p:bblack'
+    foreground = 'p:rwhite'
+
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:red"
+    background = "transparent"
+    template = "▐"
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:yellow"
+    background = 'transparent'
+    template = "▐"
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:green"
+    background = 'transparent'
+    template = "▐"
+
+# [[blocks]]
+#   type = 'rprompt'
+#
+#   [[blocks.segments]]
+#     type = "text"
+#     template = "▊ "
+# # ░ 
+#     foreground = "p:blue"
+#     background = "p:bblack"
+#
+#   [[blocks.segments]]
+#     type = 'path'
+#     template = ' {{ .Path }} '
+#     background = 'p:bblack'
+#     foreground = "p:rwhite"
+#
+#     [blocks.segments.properties]
+#       style = 'folder'
+#       home_icon = "~"
+#
+#   [[blocks.segments]]
+#     type = "git"
+#     style = "powerline"
+#     foreground = "p:green"
+#     background = "p:bblack"
+#     foreground_templates = [
+#       "{{ if gt .Ahead 0 }}p:red{{ end }}",
+#       "{{ if gt .Behind 0 }}p:magenta{{ end }}",
+#       "{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}",
+#     ]
+#     
+#     template = "▊ {{ if gt .Ahead 0 }}󰛃{{ else if gt .Behind 0 }}󰛀{{ else if or (.Working.Changed) (.Staging.Changed) }}󱓎{{ else }}{{ end }}"
+#
+#
+#     [blocks.segments.properties]
+#     fetch_status = true
+#     fetch_upstream_icon = false
+#     source = "cli"
+#
+#       [blocks.segments.properties.untracked_modes]
+#       "/Users/user/Projects/oh-my-posh/" = "no"
+#
+#   [[blocks.segments]]
+#     type = "git"
+#     style = "powerline"
+#     foreground = "p:rwhite"
+#     background = "p:bblack"
+#     
+#     template = " {{ .Ref }} "
+#
+#
+#     [blocks.segments.properties]
+#     fetch_status = true
+#     fetch_upstream_icon = false
+#     source = "cli"
+#
+#       [blocks.segments.properties.untracked_modes]
+#       "/Users/user/Projects/oh-my-posh/" = "no"
+
