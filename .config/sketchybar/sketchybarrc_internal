@@ -1,0 +1,69 @@
+#! /bin/sh
+
+source "$CONFIG_DIR/colors.sh"
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEM_DIR="$CONFIG_DIR/items"
+
+sketchybar --bar \
+  position=top \
+  height=32 \
+  blur_radius=0 \
+  color=$BLUEBG \
+  topmost=off \
+  padding_left=10 \
+  padding_right=23 \
+  notch_width=188 \
+  display=main
+
+# Defaults
+default=(
+  padding_left=5
+  padding_right=5
+  icon.font="JetBrainsMono Nerd Font Mono:Bold:17.0"
+  label.font="JetBrainsMono Nerd Font Mono:Bold:14.0"
+  icon.color=$WHITE
+  label.color=$WHITE
+  icon.padding_left=4
+  icon.padding_right=4
+  label.padding_left=4
+  label.padding_right=4
+)
+sketchybar --default "${default[@]}"
+
+sketchybar --add event audio_output_changed
+
+# Left
+source "$ITEM_DIR/apple.sh"
+source "$ITEM_DIR/spaces.sh"
+source "$ITEM_DIR/front_app.sh"
+source "$ITEM_DIR/weather.sh"
+
+
+# Right
+source "$ITEM_DIR/clock.sh"
+source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/brew.sh"
+source "$ITEM_DIR/docker.sh"
+source "$ITEM_DIR/volume.sh"
+source "$ITEM_DIR/spotify.sh"
+
+left_bracket=(
+  background.drawing=on
+  background.color=$BLACK2
+  background.corner_radius=5
+  background.height=25
+)
+
+sketchybar --add bracket left.bracket volume.icon docker brew battery clock \
+           --set left.bracket "${left_bracket[@]}"
+
+##### Force all scripts to run the first time (never do this in a script) #####
+sketchybar --update
+sketchybar --trigger brew_update
+
+# 1. Poll once to initialize the Docker status label
+sketchybar --set docker label="$($PLUGIN_DIR/docker.sh)"
+
+# 2. Start background Docker watcher for real-time updates
+# Use & to run it in the background
+$PLUGIN_DIR/docker_watcher.sh &
