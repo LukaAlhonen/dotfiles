@@ -1,7 +1,8 @@
 #!/bin/sh
 
 weather=(
-    icon=􀇔
+    # icon=􀇔
+    icon="􀇕"
     icon.color=$RED
     label.color=$WHITE
     label.padding_right=7
