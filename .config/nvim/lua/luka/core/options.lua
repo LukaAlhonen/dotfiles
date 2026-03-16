@@ -21,7 +21,8 @@ opt.smartcase = true
 
 -- cursor line
 opt.cursorline = true
-
+-- opt.guicursor = "n-v-c:block-Cursor"
+opt.guicursor = "n-v-c:block-Cursor,i:ver25-CursorInsert"
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
@@ -41,3 +42,5 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.api.nvim_set_hl(0, "Cursor", { fg = "#1e1e2e", bg = "#f38ba8" })

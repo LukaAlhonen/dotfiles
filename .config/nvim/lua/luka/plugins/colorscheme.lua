@@ -4,42 +4,30 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
+			local blue = "#0A84FF"
 			local palettes = {
 				nightfox = {
-					-- bg1 = "#131a24",
-					bg1 = "#0d1011",
-					bg0 = "#151a1c",
+					bg1 = "#0d1011", -- editor
+					bg0 = "#151a1c", -- file explorer + bufferline
 				},
 			}
 			local specs = {
 				all = {
 					syntax = {
-						-- bracket     = spec.fg2,           -- Brackets and Punctuation
 						builtin0 = "#f6c177", -- Builtin variable
-						-- builtin1 = pal.cyan.bright, -- Builtin type
-						-- builtin2 = pal.orange.bright, -- Builtin const
-						-- builtin3 = pal.red.bright, -- Not used
-						-- comment = pal.comment, -- Comment
-						-- conditional = pal.magenta.bright, -- Conditional and loop
-						-- const = pal.orange.bright, -- Constants, imports and booleans
-						-- dep = spec.fg3, -- Deprecated
 						field = "#599bf2", -- Field
-						-- func = pal.blue.bright, -- Functions and Titles
 						ident = "#8ebfff", -- Identifiers
-						-- keyword = pal.magenta.base, -- Keywords
-						-- number = pal.orange.base, -- Numbers
-						-- operator = spec.fg2, -- Operators
-						-- preproc = pal.pink.bright, -- PreProc
-						-- regex = pal.yellow.bright, -- Regex
-						-- statement = pal.magenta.base, -- Statements
 						string = "#59C9A5", -- Strings
 						type = "#f6c177", -- Types
 						variable = "#8ebfff", -- Variables
 					},
 				},
 			}
-			require("nightfox").setup({ palettes = palettes, specs = specs })
+			require("nightfox").setup({ palettes = palettes, specs = specs, groups = groups })
 			vim.cmd.colorscheme("nightfox")
+			vim.api.nvim_set_hl(0, "Cursor", { fg = "#ffffff", bg = blue })
+			vim.api.nvim_set_hl(0, "CursorInsert", { fg = "#ffffff", bg = blue })
+			vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#0A84FF", bold = true })
 		end,
 	},
 }

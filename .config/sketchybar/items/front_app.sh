@@ -18,7 +18,7 @@ front_app=(
 )
 
 sketchybar --add item chevron left \
-           --set chevron icon= label.drawing=off icon.color=$WHITE \
+           --set chevron icon=􀆊 label.drawing=off icon.color=$WHITE \
            --add item front_app left \
            --set front_app "${front_app[@]}" \
            --subscribe front_app front_app_switched

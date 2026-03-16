@@ -3,8 +3,9 @@
 SPOTIFY_EVENT="com.spotify.client.PlaybackStateChanged"
 
 spotify=(
-    icon=
-    icon.font.size=25
+    # icon=
+    icon="􂙩"
+    # icon.font.size=25
     label.drawing=off
     label.padding_right=7
     icon.padding_left=7

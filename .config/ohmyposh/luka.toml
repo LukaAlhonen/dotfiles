@@ -26,6 +26,10 @@ final_space = true
   fg="#a9b1d6"
   bblack="#2A2F41"
 
+  # c1="#0a9dff"
+  c1="#8ebfff"
+  c2="#599bf2"
+
 [upgrade]
   source = 'cdn'
   interval = '168h'
@@ -44,27 +48,31 @@ newline = false
 
   [[blocks.segments]]
     type = 'os'
-    template = " {{.Icon}} "
+    # template = " {{.Icon}} "
+    template ="􀣺 "
     style = 'diamond'
-    background = 'p:bblack'
+    # background = 'p:bblack'
     foreground = 'p:rwhite'
 
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:red"
+    # foreground = "p:red"
+    foreground = "p:white"
     background = "transparent"
     template = "▐"
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:yellow"
+    # foreground = "p:yellow"
+    foreground = "p:c1"
     background = 'transparent'
     template = "▐"
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:green"
+    # foreground = "p:green"
+    foreground = "p:c2"
     background = 'transparent'
     template = "▐"
 

@@ -40,6 +40,7 @@ return {
 				"autotools_ls",
 				"rust_analyzer",
 				"arduino_language_server",
+				"gopls",
 			},
 		})
 

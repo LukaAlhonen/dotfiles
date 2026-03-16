@@ -1,2 +1,7 @@
 .stow-local-ignore
 .tmux
+tmux-continuum
+tmux-resurrect
+tmux-sessionx
+tpm
+vim-tmux-navigator

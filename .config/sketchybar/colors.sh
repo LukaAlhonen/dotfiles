@@ -17,7 +17,8 @@ export COLOR_THREE=0xff0d1011
 export COLOR_FOUR=0xff151a1c
 export COLOR_FIVE=0xff222a2d
 
-export BLUE=0xff599bf2
+# export BLUE=0xff599bf2
+export BLUE=0xff0A84FF
 export DBLUE=0xff1575f2
 export DBLUEBG=0x101575f2
 export BLUEBG=0x50599bf2

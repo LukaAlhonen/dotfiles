@@ -34,8 +34,8 @@ default_window_id_style="digital"
 default_pane_id_style="hsquare"
 default_zoom_id_style="dsquare"
 
-default_terminal_icon=""
-default_active_terminal_icon=""
+default_terminal_icon="􀩼 "
+default_active_terminal_icon="􀪏 "
 
 window_id_style="$(echo "$TMUX_VARS" | grep '@tokyo-night-tmux_window_id_style' | cut -d" " -f2)"
 pane_id_style="$(echo "$TMUX_VARS" | grep '@tokyo-night-tmux_pane_id_style' | cut -d" " -f2)"
@@ -67,13 +67,13 @@ hostname="#($SCRIPTS_PATH/hostname-widget.sh)"
 
 #+--- Bars LEFT ---+
 # Session name
-tmux set -g status-left "#[bg=${THEME[bblack]},fg=${THEME[yellow]}]#{?client_prefix,▊ 󰠠 ,#[dim]#[fg=${THEME[foreground]}]▊ 󰤂 }#[bold,nodim]#S$hostname "
+tmux set -g status-left "$RESET#[bg=${THEME[bblack]},fg=${THEME[yellow]}]#{?client_prefix,▊ ,#[dim]#[fg=${THEME[foreground]}]▊ }$RESET#[bg=${THEME[bblack]},fg=${THEME[yellow]}]#{?client_prefix,􁹜  ,#[dim]#[fg=${THEME[white]}]􁹛  }#[bold,nodim]#S$hostname $RESET "
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "$RESET #[fg=${THEME[yellow]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},󰣀 ,▊ $active_terminal_icon $window_space}#[fg=${THEME[white]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number, $custom_pane} "
+tmux set -g window-status-current-format "$RESET #[fg=${THEME[blue]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},▊ 󰣀 ,▊ $active_terminal_icon $window_space}#[fg=${THEME[white]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
 # Unfocused
-tmux set -g window-status-format "$RESET #[fg=${THEME[foreground]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},󰣀 ,▊ $terminal_icon $window_space}$window_number#W#[nobold,dim]#{?window_zoomed_flag,$zoom_number, $custom_pane} "
+tmux set -g window-status-format "$RESET #[fg=${THEME[foreground]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},▊ 󰣀 ,▊ $terminal_icon $window_space}$window_number#W#[nobold,dim]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
 
 #+--- Bars RIGHT ---+
 tmux set -g status-right "$current_path$git_status"

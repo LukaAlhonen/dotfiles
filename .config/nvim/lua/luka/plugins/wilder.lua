@@ -14,25 +14,5 @@ return {
 				border = "rounded",
 			}))
 		)
-		--
-		-- wilder.set_option(
-		-- 	"renderer",
-		-- 	wilder.renderer_mux({
-		-- 		[":"] = wilder.popupmenu_renderer({
-		-- 			highlighter = wilder.lua_fzy_highlighter(),
-		-- 			left = {
-		-- 				" ",
-		-- 				wilder.popupmenu_devicons(),
-		-- 			},
-		-- 			right = {
-		-- 				" ",
-		-- 				wilder.popupmenu_scrollbar(),
-		-- 			},
-		-- 		}),
-		-- 		["/"] = wilder.wildmenu_renderer({
-		-- 			highlighter = wilder.lua_fzy_highlighter(),
-		-- 		}),
-		-- 	})
-		-- )
 	end,
 }
