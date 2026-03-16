@@ -1,5 +1,5 @@
 .stow-local-ignore
-.tmux
+# .tmux
 tmux-continuum
 tmux-resurrect
 tmux-sessionx

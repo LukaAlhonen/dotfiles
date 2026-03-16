@@ -71,9 +71,9 @@ tmux set -g status-left "$RESET#[bg=${THEME[bblack]},fg=${THEME[yellow]}]#{?clie
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "$RESET #[fg=${THEME[blue]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},▊ 󰣀 ,▊ $active_terminal_icon $window_space}#[fg=${THEME[white]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
+tmux set -g window-status-current-format "$RESET #[fg=${THEME[blue]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},nvim},▊ 􀉀  ,▊ $active_terminal_icon $window_space}#[fg=${THEME[white]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
 # Unfocused
-tmux set -g window-status-format "$RESET #[fg=${THEME[foreground]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},ssh},▊ 󰣀 ,▊ $terminal_icon $window_space}$window_number#W#[nobold,dim]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
+tmux set -g window-status-format "$RESET #[fg=${THEME[foreground]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},nvim},▊ 􀈿  ,▊ $terminal_icon $window_space}$window_number#W#[nobold,dim]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
 
 #+--- Bars RIGHT ---+
 tmux set -g status-right "$current_path$git_status"
