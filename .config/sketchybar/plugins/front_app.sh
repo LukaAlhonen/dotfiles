@@ -9,9 +9,19 @@ if [ "$SENDER" = "front_app_switched" ]; then
   source "$HOME/.config/sketchybar/colors.sh"
   ICON="􀆪"
   COLOR=$YELLOW
+  LABEL=$INFO
   case "$INFO" in
     "WezTerm")
       ICON="􀪏" COLOR=$RED
+      ;;
+    "Steam Helper")
+      ICON="􀛹" COLOR=$BLUE LABEL="Steam"
+      ;;
+    "Steam")
+      ICON="􀛹" COLOR=$BLUE LABEL="Steam"
+      ;;
+    "Balatro")
+      ICON="􀊵" COLOR=$RED
       ;;
     "Zed")
       ICON="􀤙" COLOR=$RED
@@ -37,9 +47,21 @@ if [ "$SENDER" = "front_app_switched" ]; then
     "ChatGPT")
       ICON="􀣳" COLOR=$GREEN
       ;;
+    "Notes")
+      ICON="􀓕" COLOR=$BLUE
+      ;;
+    "Pages")
+      ICON="􁚛" COLOR=$BLUE
+      ;;
+    "IntelliJ IDEA")
+      ICON="􂊭" COLOR=$RED
+      ;;
+    "Mail")
+      ICON="􀍖" COLOR=$BLUE
+      ;;
     *)
       ICON="􀆪" COLOR=$YELLOW
       ;;
   esac
-  sketchybar --set "$NAME" label="$INFO" icon="$ICON" icon.color=$COLOR
+  sketchybar --set "$NAME" label="$LABEL" icon="$ICON" icon.color=$COLOR
 fi

@@ -112,11 +112,6 @@ return {
 					})
 				end,
 				["graphql"] = function()
-					-- configure graphql language server
-					-- lspconfig["graphql"].setup({
-					-- 	capabilities = capabilities,
-					-- 	filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-					-- })
 					vim.lsp.config("graphql", {
 						capabilities = capabilities,
 						filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
@@ -172,9 +167,6 @@ return {
 					})
 				end,
 				["rust_analyzer"] = function()
-					-- lspconfig.rust_analyzer.setup({
-					-- 	capabilities,
-					-- })
 					vim.lsp.config("rust_analyzer", {
 						capabilities = capabilities,
 					})

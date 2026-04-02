@@ -3,7 +3,7 @@
 # Max number of characters so it fits nicely to the right of the notch
 # MAY NOT WORK WITH NON-ENGLISH CHARACTERS
 
-MAX_LENGTH=32
+MAX_LENGTH=64
 
 # Logic starts here, do not modify
 HALF_LENGTH=$(((MAX_LENGTH + 1) / 2))
@@ -14,7 +14,7 @@ SPOTIFY_JSON="$INFO"
 update_track() {
     source "$HOME/.config/sketchybar/colors.sh"
     if [[ -z $SPOTIFY_JSON ]]; then
-        sketchybar --set $NAME icon.color=$WHITE background.color=$BLACK2 label.drawing=no
+        sketchybar --set $NAME icon.color=$GREEN background.color=$BLACK2 label.drawing=yes
         return
     fi
 

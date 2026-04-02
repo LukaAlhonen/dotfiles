@@ -5,3 +5,5 @@ tmux-resurrect
 tmux-sessionx
 tpm
 vim-tmux-navigator
+.DS_Store
+conversations/
