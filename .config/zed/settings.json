@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": "VSCode Icons for Zed (Dark)",
   "base_keymap": "VSCode",
   "show_edit_predictions": false,
   "agent": {

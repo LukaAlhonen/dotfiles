@@ -59,6 +59,9 @@ if [ "$SENDER" = "front_app_switched" ]; then
     "Mail")
       ICON="􀍖" COLOR=$BLUE
       ;;
+    "Zen")
+      ICON="􀨁" COLOR=$RED
+      ;;
     *)
       ICON="􀆪" COLOR=$YELLOW
       ;;
