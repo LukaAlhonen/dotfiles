@@ -3,12 +3,12 @@ source "$HOME/.config/sketchybar/colors.sh"
 
 COUNT=$(/bin/zsh -c "brew outdated -q | wc -l | tr -d ' \n'")
 
-COLOR=$RED
+COLOR=$CAT_RED
 case "$COUNT" in
-  [3-9][0-9]|[1-9][0-9][0-9]*) COLOR=$RED ;;
-  [1-2][0-9]) COLOR=$YELLOW ;;
-  [1-9]) COLOR=$WHITE ;;
-  0) COLOR=$GREEN ;;
+  [3-9][0-9]|[1-9][0-9][0-9]*) COLOR=$CAT_RED ;;
+  [1-2][0-9]) COLOR=$CAT_YELLOW ;;
+  [1-9]) COLOR=$CAT_TEXT ;;
+  0) COLOR=$CAT_GREEN ;;
 esac
 
-sketchybar --set brew label="$COUNT" icon.color="$COLOR"
+sketchybar --set brew label="$COUNT" icon.color="$COLOR" label.color="$CAT_TEXT"

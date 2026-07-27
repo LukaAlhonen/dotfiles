@@ -1,11 +1,9 @@
 #!/bin/sh
 
+source "$HOME/.config/sketchybar/colors.sh"
+
 PERCENTAGE="$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)"
 CHARGING="$(pmset -g batt | grep 'AC Power')"
-
-RED=0xffd16983
-GREEN=0xff8ebaa4
-YELLOW=0xffe0af68
 
 if [ "$PERCENTAGE" = "" ]; then
   exit 0
@@ -14,28 +12,28 @@ fi
 case "${PERCENTAGE}" in
   9[0-9]|100)
     ICON="􀛨"
-    COLOR=$GREEN
+    COLOR=$CAT_GREEN
   ;;
   [6-8][0-9])
     ICON="􀺸"
-    COLOR=$GREEN
+    COLOR=$CAT_GREEN
   ;;
   [3-5][0-9])
     ICON="􀺶"
-    COLOR=$GREEN
+    COLOR=$CAT_GREEN
   ;;
   [1-2][0-9])
     ICON="􀛩"
-    COLOR=$YELLOW
+    COLOR=$CAT_YELLOW
   ;;
   *)
     ICON="􀛪"
-    COLOR=$RED
+    COLOR=$CAT_RED
 esac
 
 if [[ "$CHARGING" != "" ]]; then
   ICON="􀢋"
-  COLOR=$GREEN
+  COLOR=$CAT_GREEN
 fi
 
 # The item invoking this script (name $NAME) will get its icon and label

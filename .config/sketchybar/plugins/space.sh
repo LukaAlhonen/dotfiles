@@ -5,9 +5,9 @@ source "$CONFIG_DIR/colors.sh"
 if [ "$SELECTED" = "true" ]; then
   sketchybar --set "$NAME" \
     icon="􀏨" \
-    icon.color=$BLUE
+    icon.color=$CAT_BLUE
 else
   sketchybar --set "$NAME" \
     icon="􀏧" \
-    icon.color=$WHITE
+    icon.color=$CAT_ROSEWATER
 fi

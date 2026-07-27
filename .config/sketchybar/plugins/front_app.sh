@@ -8,62 +8,62 @@
 if [ "$SENDER" = "front_app_switched" ]; then
   source "$HOME/.config/sketchybar/colors.sh"
   ICON="􀆪"
-  COLOR=$YELLOW
+  COLOR=$CAT_YELLOW
   LABEL=$INFO
   case "$INFO" in
     "WezTerm")
-      ICON="􀪏" COLOR=$RED
+      ICON="􀪏" COLOR=$CAT_RED
       ;;
     "Steam Helper")
-      ICON="􀛹" COLOR=$BLUE LABEL="Steam"
+      ICON="􀛹" COLOR=$CAT_BLUE LABEL="Steam"
       ;;
     "Steam")
-      ICON="􀛹" COLOR=$BLUE LABEL="Steam"
+      ICON="􀛹" COLOR=$CAT_BLUE LABEL="Steam"
       ;;
     "Balatro")
-      ICON="􀊵" COLOR=$RED
+      ICON="􀊵" COLOR=$CAT_RED
       ;;
     "Zed")
-      ICON="􀤙" COLOR=$RED
+      ICON="􀤙" COLOR=$CAT_RED
       ;;
     "Docker Desktop")
-      ICON="􀐟" COLOR=$BLUE
+      ICON="􀐟" COLOR=$CAT_BLUE
       ;;
     "Safari")
-      ICON="􀎭" COLOR=$BLUE
+      ICON="􀎭" COLOR=$CAT_BLUE
       ;;
     "Spotify")
-      ICON="􂙩" COLOR=$GREEN
+      ICON="􂙩" COLOR=$CAT_GREEN
       ;;
     "Xcode")
-      ICON="􀙅" COLOR=$BLUE
+      ICON="􀙅" COLOR=$CAT_BLUE
       ;;
     "Finder")
-      ICON="􀈖" COLOR=$BLUE
+      ICON="􀈖" COLOR=$CAT_BLUE
       ;;
     "System Settings")
-      ICON="􀍟" COLOR=$BLUE
+      ICON="􀍟" COLOR=$CAT_BLUE
       ;;
     "ChatGPT")
-      ICON="􀣳" COLOR=$GREEN
+      ICON="􀣳" COLOR=$CAT_GREEN
       ;;
     "Notes")
-      ICON="􀓕" COLOR=$BLUE
+      ICON="􀓕" COLOR=$CAT_BLUE
       ;;
     "Pages")
-      ICON="􁚛" COLOR=$BLUE
+      ICON="􁚛" COLOR=$CAT_BLUE
       ;;
     "IntelliJ IDEA")
-      ICON="􂊭" COLOR=$RED
+      ICON="􂊭" COLOR=$CAT_RED
       ;;
     "Mail")
-      ICON="􀍖" COLOR=$BLUE
+      ICON="􀍖" COLOR=$CAT_BLUE
       ;;
     "Zen")
-      ICON="􀨁" COLOR=$RED
+      ICON="􀨁" COLOR=$CAT_RED
       ;;
     *)
-      ICON="􀆪" COLOR=$YELLOW
+      ICON="􀆪" COLOR=$CAT_YELLOW
       ;;
   esac
   sketchybar --set "$NAME" label="$LABEL" icon="$ICON" icon.color=$COLOR

@@ -1,10 +1,9 @@
 #! /bin/sh
 
 docker=(
-  # icon="􀐞"
   icon="􀐟"
-  icon.color=$BLUE
-  label.color=$WHITE
+  icon.color=$CAT_BLUE
+  label.color=$CAT_TEXT
   label="x"
   label.padding_right=7
   icon.padding_left=7

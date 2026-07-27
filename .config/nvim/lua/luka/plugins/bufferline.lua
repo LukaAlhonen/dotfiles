@@ -17,7 +17,7 @@ return {
 			},
 		},
 		highlights = {
-			indicator_selected = { fg = "#0A84FF" },
+			indicator_selected = { fg = "#F5BDE6" },
 		},
 	},
 }

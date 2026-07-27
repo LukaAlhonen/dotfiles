@@ -5,13 +5,13 @@ WIDTH=100
 volume_change() {
   source "$HOME/.config/sketchybar/colors.sh"
   case "$INFO" in
-    [6-9][0-9]|100) COLOR=$BLUE
+    [6-9][0-9]|100) COLOR=$CAT_BLUE
     ;;
-    [3-5][0-9]) COLOR=$BLUE
+    [3-5][0-9]) COLOR=$CAT_BLUE
     ;;
-    [1-9]|[1-2][0-9]) COLOR=$YELLOW
+    [1-9]|[1-2][0-9]) COLOR=$CAT_YELLOW
     ;;
-    *) COLOR=$RED
+    *) COLOR=$CAT_RED
   esac
   sketchybar --set $NAME slider.percentage=$INFO slider.highlight_color=$COLOR
 }

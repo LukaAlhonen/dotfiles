@@ -7,10 +7,24 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "theme": "Catppuccin Macchiato",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "icon_theme": "VSCode Icons for Zed (Dark)",
   "base_keymap": "VSCode",
   "show_edit_predictions": false,
   "agent": {
+    "dock": "right",
     "single_file_review": false,
     "default_model": {
       "provider": "zed.dev",
@@ -41,55 +55,55 @@
   "ui_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_size": 13.0,
-  "theme": "Nightfox - opaque",
-  "experimental.theme_overrides": {
-    "background": "#0d1011FF",
-    "editor.background": "#151a1cFF",
-    "editor.gutter.background": "#151a1cFF",
-    "terminal.background": "#0d1011FF",
-    // "tab.inactive_background": "#222a2dFF",
-    "tab.inactive_background": "#0d1011FF",
-    // "tab.active_background": "#0d1011FF",
-    "tab.active_background": "#222a2dFF",
-    "title_bar.background": "#0d1011FF",
-    // "tab_bar.background": "#151a1cFF",
-    "tab_bar.background": "#0d1011FF",
-    "element.hover": "#29394f",
-    // "toolbar.background": "#0d1011FF",
-    "toolbar.background": "#222a2dFF",
-    "editor.active_line.background": "#29394f",
-    "panel.focused_border": "#f6b079",
-    "panel.overlay_hover": "#ffff",
-    "terminal.ansi.cyan": "#599bf2",
-    "border": "#3f3f3fff",
-    "border.variant": "#f6c17790",
-    "panel.background": "#0d1011FF",
-    "status_bar.background": "#0d1011FF",
+  // "theme": "Nightfox - opaque",
+  // "experimental.theme_overrides": {
+  //   "background": "#0d1011FF",
+  //   "editor.background": "#151a1cFF",
+  //   "editor.gutter.background": "#151a1cFF",
+  //   "terminal.background": "#0d1011FF",
+  //   // "tab.inactive_background": "#222a2dFF",
+  //   "tab.inactive_background": "#0d1011FF",
+  //   // "tab.active_background": "#0d1011FF",
+  //   "tab.active_background": "#222a2dFF",
+  //   "title_bar.background": "#0d1011FF",
+  //   // "tab_bar.background": "#151a1cFF",
+  //   "tab_bar.background": "#0d1011FF",
+  //   "element.hover": "#29394f",
+  //   // "toolbar.background": "#0d1011FF",
+  //   "toolbar.background": "#222a2dFF",
+  //   "editor.active_line.background": "#29394f",
+  //   "panel.focused_border": "#f6b079",
+  //   "panel.overlay_hover": "#ffff",
+  //   "terminal.ansi.cyan": "#599bf2",
+  //   "border": "#3f3f3fff",
+  //   "border.variant": "#f6c17790",
+  //   "panel.background": "#0d1011FF",
+  //   "status_bar.background": "#0d1011FF",
 
-    "syntax": {
-      "property": {
-        "color": "#599bf2",
-      },
-      "function": {
-        "color": "#599bf2",
-      },
-      "variable": {
-        "color": "#8ebfff",
-      },
-      "type": {
-        "color": "#f6c177",
-      },
-      "string": {
-        "color": "#59C9A5",
-      },
-    },
-    "players": [
-      {
-        "cursor": "#ffff",
-        "selection": "#29394f",
-      },
-    ],
-  },
+  //   "syntax": {
+  //     "property": {
+  //       "color": "#599bf2",
+  //     },
+  //     "function": {
+  //       "color": "#599bf2",
+  //     },
+  //     "variable": {
+  //       "color": "#8ebfff",
+  //     },
+  //     "type": {
+  //       "color": "#f6c177",
+  //     },
+  //     "string": {
+  //       "color": "#59C9A5",
+  //     },
+  //   },
+  //   "players": [
+  //     {
+  //       "cursor": "#ffff",
+  //       "selection": "#29394f",
+  //     },
+  //   ],
+  // },
   "lsp": {
     "kotlin-language-server": {
       "settings": {

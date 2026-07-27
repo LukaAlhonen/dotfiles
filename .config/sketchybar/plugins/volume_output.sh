@@ -11,8 +11,8 @@ do
   ITEM="audio.device.$INDEX"
 
   if [ "$DEVICE" = "$CURRENT" ]; then
-    sketchybar --set "$ITEM" icon="􀞉" icon.color=$BLUE
+    sketchybar --set "$ITEM" icon="􀞉" icon.color=$CAT_BLUE
   else
-    sketchybar --set "$ITEM" icon="􀞈" icon.color=$WHITE
+    sketchybar --set "$ITEM" icon="􀞈" icon.color=$CAT_ROSEWATER
   fi
 done

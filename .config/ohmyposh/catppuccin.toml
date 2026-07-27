@@ -1,0 +1,66 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[palette]
+  background="#24273A"
+  foreground="#CAD3F5"
+  black="#181926"
+  blue="#8AADF4"
+  cyan="#91D7E3"
+  green="#A6DA95"
+  magenta="#C6A0F6"
+  red="#ED8796"
+  white="#CAD3F5"
+  yellow="#EED49F"
+
+  bblack="#494D64"
+  bblue="#7DC4E4"
+  bcyan="#B7BDF8"
+  bgreen="#8BD5C2"
+  bmagenta="#F5BDE6"
+  bred="#EE99A0"
+  bwhite="#F4DBD6"
+  byellow="#F5A97F"
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[transient_prompt]
+background = "transparent"
+foreground = "p:green"
+template = "▐ "
+newline = false
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    type = 'os'
+    template ="􀣺 "
+    style = 'diamond'
+    foreground = 'p:byellow'
+
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:red"
+    background = "transparent"
+    template = "▐"
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:yellow"
+    background = 'transparent'
+    template = "▐"
+  [[blocks.segments]]
+    type = "text"
+    style = "plain"
+    foreground = "p:bwhite"
+    background = 'transparent'
+    template = "▐"
+

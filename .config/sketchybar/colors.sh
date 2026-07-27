@@ -1,23 +1,18 @@
 #!/bin/sh
 
-export WHITE=0xffffffff
-
 # -- My Scheme --
+export WHITE=0xffffffff
 export BAR_COLOR=0x400d1011
 export BAR_COLOR2=0xff0d1011
 export ITEM_BG_COLOR=0xff272c2d
 export ITEM_COLOR=0xffa9b1d6
 export ITEM_ACTIVE_COLOR=0xffe0af68
-
 export GLASS=0x00ffffff
-
 export COLOR_ONE=0xff1c2326
 export COLOR_TWO=0xff1c1e26
 export COLOR_THREE=0xff0d1011
 export COLOR_FOUR=0xff151a1c
 export COLOR_FIVE=0xff222a2d
-
-# export BLUE=0xff599bf2
 export BLUE=0xff0A84FF
 export DBLUE=0xff1575f2
 export DBLUEBG=0x101575f2
@@ -29,51 +24,36 @@ export DBLACK=0xff0d1011
 export RED=0xffd16983
 export GREEN=0xff8ebaa4
 export BLACK2=0xff22252d
-
 export BORDER_COLOR=0x70a9b1d6
 
-  # bg: "#1c2326",
-  # bg2: "#1c1e26",
-  # bg3: "#0d1011",
-  # bg4: "#151a1c",
-  # bg5: "#222a2d",
-# -- Teal Scheme --
-# export BAR_COLOR=0xff001f30
-# export ITEM_BG_COLOR=0xff003547
-# export ACCENT_COLOR=0xff2cf9ed
+# -- Catppuccin --
 
-# -- Gray Scheme --
-# export BAR_COLOR=0xff101314
-# export ITEM_BG_COLOR=0xff353c3f
-# export ACCENT_COLOR=0xffffffff
+CAT_BAR_COLOR=0XFF8666A8  
 
-# -- Purple Scheme --
-# export BAR_COLOR=0xff140c42
-# export ITEM_BG_COLOR=0xff2b1c84
-# export ACCENT_COLOR=0xffeb46f9
+CAT_ROSEWATER=0XFFF4DBD6 # -- BWHITE
+CAT_FLAMINGO=0XFFF0C6C6 
+CAT_PINK=0XFFF5BDE6 # -- BMAGENTA
+CAT_MAUVE=0XFFC6A0F6 # -- MAGENTA
+CAT_RED=0XFFED8796
+CAT_MAROON=0XFFEE99A0 # -- BRED
+CAT_PEACH=0XFFF5A97F # -- BYELLOW
+CAT_YELLOW=0XFFEED49F
+CAT_GREEN=0XFFA6DA95
+CAT_TEAL=0XFF8BD5C2 # -- BGREEN
+CAT_SKY=0XFF91D7E3 # -- CYAN
+CAT_SAPPHIRE=0XFF7DC4E4 # -- BBLUE
+CAT_BLUE=0XFF8AADF4
+CAT_LAVENDER=0XFFB7BDF8 # -- BCYAN
 
-# -- Red Scheme ---
-# export BAR_COLOR=0xff23090e
-# export ITEM_BG_COLOR=0xff591221
-# export ACCENT_COLOR=0xffff2453
-
-# -- Blue Scheme ---
-# export BAR_COLOR=0xff021254
-# export ITEM_BG_COLOR=0xff093aa8
-# export ACCENT_COLOR=0xff15bdf9
-
-# -- Green Scheme --
-# export BAR_COLOR=0xff003315
-# export ITEM_BG_COLOR=0xff008c39
-# export ACCENT_COLOR=0xff1dfca1
-
-
-# -- Orange Scheme --
-# export BAR_COLOR=0xff381c02
-# export ITEM_BG_COLOR=0xff99440a
-# export ACCENT_COLOR=0xfff97716
-
-# -- Yellow Scheme --
-# export BAR_COLOR=0xff2d2b02
-# export ITEM_BG_COLOR=0xff8e7e0a
-# export ACCENT_COLOR=0xfff7fc17
+CAT_TEXT=0XFFCAD3F5 # -- FOREGROUND
+CAT_SUBTEXT1=0XFFB8C0E0
+CAT_SUBTEXT0=0XFFA5ADCB
+CAT_OVERLAY2=0XFF939AB7
+CAT_OVERLAY1=0XFF8087A2
+CAT_OVERLAY0=0XFF6E738D
+CAT_SURFACE2=0XFF5B6078
+CAT_SURFACE1=0XFF494D64 # -- BBLACK
+CAT_SURFACE0=0XFF363A4F
+CAT_BASE=0XFF24273A # -- BACKGROUND
+CAT_MANTLE=0XFF1E2030
+CAT_CRUST=0XFF181926 # -- BLACK

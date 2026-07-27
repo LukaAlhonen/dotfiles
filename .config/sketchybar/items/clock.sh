@@ -1,8 +1,8 @@
 clock=(
   update_freq=10
   icon=􀐬
-  icon.color=$RED
-  label.color=$WHITE
+  icon.color=$CAT_RED
+  label.color=$CAT_TEXT
   icon.padding_left=0
   label.padding_right=7
   label.y_offset=1
