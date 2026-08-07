@@ -1,11 +1,11 @@
 #!/bin/sh
 
 POPUP_OFF="sketchybar --set apple.logo popup.drawing=off"
-POPUP_CLICK_SCRIPT="sketchybar --set \$NAME popup.drawing=toggle --set \$NAME popup.topmost=on --set \$NAME popup.background.drawing=on --set \$NAME popup.background.color=$CAT_MANTLE --set \$NAME popup.background.border_color=$CAT_TEXT --set \$NAME popup.background.border_width=1 --set \$NAME popup.background.corner_radius=5"
+POPUP_CLICK_SCRIPT="sketchybar --set \$NAME popup.drawing=toggle --set \$NAME popup.topmost=on --set \$NAME popup.background.drawing=on --set \$NAME popup.background.color=$CAT_MANTLE --set \$NAME popup.background.border_color=$FOREGROUND --set \$NAME popup.background.border_width=1 --set \$NAME popup.background.corner_radius=5"
 
 apple_logo=(
   icon="􀣺"
-  icon.color=$CAT_ROSEWATER
+  icon.color=$CAT_TEXT
   padding_right=15
   label.drawing=off
   click_script="$POPUP_CLICK_SCRIPT"

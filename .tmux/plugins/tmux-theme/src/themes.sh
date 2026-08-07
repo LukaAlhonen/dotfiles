@@ -25,6 +25,7 @@ case $SELECTED_THEME in
     ["bred"]="#f7768e"
     ["bwhite"]="#787c99"
     ["byellow"]="#e0af68"
+    ["lavender"]="#B7BDF8"
   )
   ;;
 
@@ -49,6 +50,7 @@ case $SELECTED_THEME in
     ["bred"]="#EE99A0"
     ["bwhite"]="#F4DBD6"
     ["byellow"]="#F5A97F"
+    ["lavender"]="#B7BDF8"
   )
   ;;
 
@@ -74,6 +76,7 @@ case $SELECTED_THEME in
     ["bred"]="#ff9e64"
     ["bwhite"]="#787c99"
     ["byellow"]="#e0af68"
+    ["lavender"]="#B7BDF8"
   )
   ;;
 esac

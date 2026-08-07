@@ -22,6 +22,7 @@ final_space = true
   bred="#EE99A0"
   bwhite="#F4DBD6"
   byellow="#F5A97F"
+  lavender="#B7BDF8"
 
 [upgrade]
   source = 'cdn'
@@ -43,24 +44,24 @@ newline = false
     type = 'os'
     template ="􀣺 "
     style = 'diamond'
-    foreground = 'p:byellow'
+    foreground = 'p:white'
 
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:red"
+    foreground = "p:blue"
     background = "transparent"
     template = "▐"
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:yellow"
+    foreground = "p:magenta"
     background = 'transparent'
     template = "▐"
   [[blocks.segments]]
     type = "text"
     style = "plain"
-    foreground = "p:bwhite"
+    foreground = "p:bmagenta"
     background = 'transparent'
     template = "▐"
 

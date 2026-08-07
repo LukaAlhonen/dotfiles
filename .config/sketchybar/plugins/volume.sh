@@ -8,11 +8,11 @@ if [ "$SENDER" = "volume_change" ]; then
   VOLUME="$INFO"
 
   case "$VOLUME" in
-    [6-9][0-9]|100) ICON="􀊧" COLOR=$CAT_BLUE
+    [6-9][0-9]|100) ICON="􀊧" COLOR=$CAT_SAPPHIRE
     ;;
-    [3-5][0-9]) ICON="􀊥" COLOR=$CAT_BLUE
+    [3-5][0-9]) ICON="􀊥" COLOR=$CAT_MAUVE
     ;;
-    [1-9]|[1-2][0-9]) ICON="􀊡" COLOR=$CAT_YELLOW
+    [1-9]|[1-2][0-9]) ICON="􀊡" COLOR=$CAT_PEACH
     ;;
     *) ICON="􀊣" COLOR=$CAT_RED
   esac

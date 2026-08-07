@@ -3,7 +3,7 @@
 weather=(
     # icon=􀇔
     icon="􀇕"
-    icon.color=$CAT_RED
+    icon.color=$CAT_YELLOW
     label.color=$CAT_TEXT
     label.padding_right=7
     icon.padding_left=7
