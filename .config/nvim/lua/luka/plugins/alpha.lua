@@ -6,10 +6,10 @@ return {
 		local dashboard = require("alpha.themes.dashboard")
 
 		-- Greeter colors
-		vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#F5BDE6", bold = true }) -- blue header
-		vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = "#F5A97F", bold = true }) -- yellow command
-		vim.api.nvim_set_hl(0, "AlphaButtons", { fg = "#F4DBD6" }) -- white description
-		vim.api.nvim_set_hl(0, "AlphaIcon", { fg = "#F5BDE6" }) -- blue icon
+		vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#C6A0F6", bold = true }) -- header
+		vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = "#F5BDE6", bold = true }) -- command
+		vim.api.nvim_set_hl(0, "AlphaButtons", { fg = "#F4DBD6" }) -- description
+		vim.api.nvim_set_hl(0, "AlphaIcon", { fg = "#8AADF4" }) -- icon
 
 		-- Set header
 		dashboard.section.header.val = {
