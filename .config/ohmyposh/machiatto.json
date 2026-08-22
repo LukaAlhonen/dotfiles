@@ -98,12 +98,12 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "p:git",
+          "foreground": "p:teal",
           "template": " {{ .HEAD }} ",
           "foreground_templates": [
             "{{ if gt .Ahead 0 }}p:red{{ end }}",
             "{{ if gt .Behind 0 }}p:mauve{{ end }}",
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:peach{{ end }}"
           ],
           "properties": {
             "fetch_status": true,
