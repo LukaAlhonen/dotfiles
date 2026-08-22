@@ -39,7 +39,7 @@
     "os-bg": "p:overlay1",
     "root-fg": "p:base",
     "root-bg": "p:yellow",
-    "path": "p:yellow",
+    "path": "p:sky",
     "git": "p:lavender",
     "docker": "p:sky",
     "go": "p:mauve",
@@ -79,7 +79,7 @@
           "background": "p:surface0",
           "foreground_templates": ["{{ if .Root }}p:root-fg{{ end }}"],
           "background_templates": ["{{ if .Root }}p:root-bg{{ end }}"],
-          "template": " {{ .Icon }} ",
+          "template": " 􀣺 ",
           "properties": {
             "windows": "\ue70f"
           }
@@ -88,7 +88,7 @@
           "type": "path",
           "style": "plain",
           "foreground": "p:path",
-          "template": " {{ .Path }} ",
+          "template": " 􀈖  {{ .Path }} ",
           "properties": {
             "home_icon": "~",
             "folder_icon": "..",
@@ -96,9 +96,15 @@
           }
         },
         {
+          "type": "docker",
+          "style": "plain",
+          "foreground": "p:blue",
+          "template": " 􀐟  {{ if .Containers }}{{ .Containers }}{{ else }}0{{ end }} "
+        },
+        {
           "type": "git",
           "style": "plain",
-          "foreground": "p:teal",
+          "foreground": "p:green",
           "template": " {{ .HEAD }} ",
           "foreground_templates": [
             "{{ if gt .Ahead 0 }}p:red{{ end }}",
@@ -126,13 +132,7 @@
           "foreground": "p:peach",
           "display_mode": "always",
           "home_enabled": true,
-          "template": "􀫊  {{ .Full }} "
-        },
-        {
-          "type": "docker",
-          "style": "plain",
-          "foreground": "p:blue",
-          "template": "􀐟  {{ if .Containers }}{{ .Containers }}{{ else }}0{{ end }} "
+          "template": " 􀫊  {{ .Full }} "
         },
         {
           "type": "go",
