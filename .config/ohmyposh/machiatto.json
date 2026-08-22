@@ -90,8 +90,8 @@
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
-          "foreground": "p:surface0",
-          "background": "p:path",
+          "background": "p:surface0",
+          "foreground": "p:path",
           "template": " 􀈖  {{ .Path }} ",
           "properties": {
             "home_icon": "~",
@@ -111,10 +111,10 @@
           "type": "git",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
-          "foreground": "p:surface0",
-          "background": "p:green",
+          "background": "p:surface0",
+          "foreground": "p:green",
           "template": " {{ .HEAD }} ",
-          "background_templates": [
+          "foreground_templates": [
             "{{ if gt .Ahead 0 }}p:red{{ end }}",
             "{{ if gt .Behind 0 }}p:mauve{{ end }}",
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:peach{{ end }}"
