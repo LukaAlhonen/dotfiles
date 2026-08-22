@@ -98,18 +98,19 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "p:teal",
-          "template": "{{ .HEAD }} ",
+          "foreground": "p:git",
+          "template": " {{ .HEAD }} ",
           "foreground_templates": [
             "{{ if gt .Ahead 0 }}p:red{{ end }}",
             "{{ if gt .Behind 0 }}p:mauve{{ end }}",
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}"
           ],
           "properties": {
+            "fetch_status": true,
+            "source": "cli",
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
             "commit_icon": "\uf417 ",
-            "fetch_status": false,
             "fetch_stash_count": false,
             "fetch_upstream_icon": false,
             "merge_icon": "\ue727 ",
