@@ -10,7 +10,7 @@ sketchybar --bar \
   blur_radius=0 \
   color=$CAT_BAR_COLOR \
   topmost=off \
-  padding_left=10 \
+  padding_left=15 \
   padding_right=23 \
   notch_width=188 \
   display=main
@@ -45,16 +45,27 @@ source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/brew.sh"
 source "$ITEM_DIR/docker.sh"
 source "$ITEM_DIR/volume.sh"
+source "$ITEM_DIR/rbracket_icon.sh"
 source "$ITEM_DIR/spotify.sh"
 
-left_bracket=(
+right_bracket=(
   background.drawing=on
-  background.color=$BLACK2
+  background.color=$CAT_MANTLE
   background.corner_radius=5
   background.height=25
 )
 
-sketchybar --add bracket left.bracket volume.icon docker brew battery clock \
+sketchybar --add bracket right.bracket rbracket.icon volume.icon docker brew battery clock \
+           --set right.bracket "${right_bracket[@]}"
+
+left_bracket=(
+  background.drawing=on
+  background.color=$CAT_MANTLE
+  background.corner_radius=5
+  background.height=25
+)
+
+sketchybar --add bracket left.bracket apple.logo spaces_bracket \
            --set left.bracket "${left_bracket[@]}"
 
 ##### Force all scripts to run the first time (never do this in a script) #####

@@ -60,19 +60,19 @@ fi
 # Set the status indicator based on the sync mode 􀱇  􀄕  􀣱  􀬱  􀙠
 case "$SYNC_MODE" in
 1)
-  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[byellow]},bold]#[fg=${THEME[surface0]},bg=${THEME[byellow]}]"
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[byellow]},bold]#[fg=${THEME[surface0]},bg=${THEME[byellow]}] "
   REMOTE_END="$RESET#[bg=${THEME[byellow]},fg=${THEME[surface0]}]"
   ;;
 2)
-  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bred]},bold]#[fg=${THEME[surface0]},bg=${THEME[bred]}]􀄕 "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bred]},bold]#[fg=${THEME[surface0]},bg=${THEME[bred]}] 􀄕 "
   REMOTE_END="$RESET#[bg=${THEME[bred]},fg=${THEME[surface0]}]"
   ;;
 3)
-  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bmagenta]},bold]#[fg=${THEME[surface0]},bg=${THEME[bmagenta]}]􀱇 "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bmagenta]},bold]#[fg=${THEME[surface0]},bg=${THEME[bmagenta]}] 􀱇 "
   REMOTE_END="$RESET#[bg=${THEME[bmagenta]},fg=${THEME[surface0]}]"
   ;;
 *)
-  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[green]},bold]#[fg=${THEME[surface0]},bg=${THEME[green]}]"
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[green]},bold]#[fg=${THEME[surface0]},bg=${THEME[green]}] "
   REMOTE_END="$RESET#[bg=${THEME[bgreen]},fg=${THEME[surface0]}]"
   ;;
 esac

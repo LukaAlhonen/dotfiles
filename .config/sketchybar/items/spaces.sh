@@ -20,9 +20,6 @@ do
 done
 
 spaces_bracket=(
-    background.corner_radius=5
-    background.height=25
-    background.color=$CAT_MANTLE
 )
 
 sketchybar --add bracket spaces_bracket \
