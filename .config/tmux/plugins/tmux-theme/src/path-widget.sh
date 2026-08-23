@@ -24,4 +24,4 @@ if [[ ${PATH_FORMAT} == "relative" ]]; then
   current_path="$(echo ${current_path} | sed 's#'"$HOME"'#~#g')"
 fi
 
-echo "#[fg=${THEME[bblue]},bg=${THEME[bblack]}]▊ 􀈖  ${RESET}#[fg=${THEME[white]},bg=${THEME[bblack]}]${current_path} "
+echo "#[fg=${THEME[bblue]},bg=${THEME[surface0]}] 􀈖  ${current_path}#[fg=${THEME[surface0]},bg=${THEME[background]}]"

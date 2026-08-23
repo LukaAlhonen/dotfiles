@@ -1,0 +1,12 @@
+pane	1	0	1	:*	0	zsh in ~/dotfiles	:/Users/luka/dotfiles	1	zsh	:
+pane	cfg	0	0	:	0	zsh in ~/.config/tmux	:/Users/luka/dotfiles/.config/tmux	0	nvim	:nvim
+pane	cfg	0	0	:	1	zsh in ~/.config/tmux/plugins/tmux-powerline	:/Users/luka/dotfiles/.config/tmux/plugins/tmux-powerline	1	zsh	:
+pane	cfg	1	0	:-	0	zsh in ~/.config/sketchybar	:/Users/luka/dotfiles/.config/sketchybar	1	nvim	:nvim
+pane	cfg	1	0	:-	1	zsh in ~/dotfiles	:/Users/luka/dotfiles	0	zsh	:
+pane	cfg	2	1	:*	0	zsh in ~/dotfiles/.config/tmux/plugins/tmux-theme	:/Users/luka/dotfiles/.config/tmux/plugins/tmux-theme	0	nvim	:nvim
+pane	cfg	2	1	:*	1	zsh in ~/dotfiles	:/Users/luka/dotfiles	1	zsh	:
+window	1	0	:zsh	1	:*	6670,180x48,0,0,11	:
+window	cfg	0	:tmux	0	:	cc13,180x48,0,0[180x34,0,0,0,180x13,0,35,1]	off
+window	cfg	1	:nvim	0	:-	98a5,180x48,0,0[180x39,0,0,9,180x8,0,40,10]	:
+window	cfg	2	:tmux-theme	1	:*	b0b1,180x48,0,0[180x39,0,0,5,180x8,0,40,8]	off
+state	cfg	1

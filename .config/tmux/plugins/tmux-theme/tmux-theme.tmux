@@ -51,17 +51,20 @@ window_space=$([[ $window_tidy == "0" ]] && echo " " || echo "")
 git_status="#($SCRIPTS_PATH/git-status.sh #{pane_current_path})"
 wb_git_status="#($SCRIPTS_PATH/wb-git-status.sh #{pane_current_path} &)"
 current_path="#($SCRIPTS_PATH/path-widget.sh #{pane_current_path})"
+end_segment="#[fg=${THEME[magenta]},bg=${THEME[surface0]}]#{?#{==:#{window_index},#{last_window_index}}, 󱐋,}#[fg=${THEME[surface0]},bg=${THEME[background]}]#{?#{==:#{window_index},#{last_window_index}},,}"
+status_start="#[bg=${THEME[background]}]#{?client_prefix,#[fg=${THEME[bred]}],#[fg=${THEME[bwhite]}]}#[fg=${THEME[surface0]}]#{?client_prefix,#[bg=${THEME[bred]}] 􁹜  ,#[bg=${THEME[bwhite]}] 􁹛  }#[bg=${THEME[surface0]}]#{?client_prefix,#[fg=${THEME[bred]}],#[fg=${THEME[bwhite]}]}"
+status_end="#[fg=${THEME[surface0]},bg=${THEME[background]}] #[fg=${THEME[surface0]},bg=${THEME[background]}]#[fg=${THEME[magenta]},bg=${THEME[surface0]}]󱐋"
 
 #+--- Bars LEFT ---+
 # Session name
-tmux set -g status-left "$RESET#{#[fg=${THEME[surface0]}] }$RESET#[bg=${THEME[bred]},fg=${THEME[surface0]}]#{?client_prefix, 􁹜  ,#[bg=${THEME[bwhite]}] 􁹛  }#[bold,nodim]#S #[fg=${THEME[surface0]},bg=${THEME[background]}]$RESET"
+tmux set -g status-left "$RESET$status_start#{#[fg=${THEME[bred]}] }$RESET#[bg=${THEME[surface0]},fg=${THEME[bred]}]#{?client_prefix,,#[fg=${THEME[bwhite]}]} #S#[bold,nodim] $RESET"
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "$RESET#[fg=${THEME[surface0]},bg=${THEME[blue]}]#{?#{==:#{pane_current_command},nvim}, 􀉀  , $active_terminal_icon $window_space}#[fg=${THEME[surface0]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
+tmux set -g window-status-current-format "$RESET#[fg=${THEME[surface0]},bg=${THEME[blue]}]#[fg=${THEME[blue],bg=${THEME[surface0]}}]#[fg=${THEME[surface0]},bg=${THEME[blue]}]#{?#{==:#{pane_current_command},nvim}, 􀉀  , $active_terminal_icon $window_space}#[fg=${THEME[surface0]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane}#[fg=${THEME[blue]},bg=${THEME[surface0]}]$end_segment"
 # Unfocused
-tmux set -g window-status-format "$RESET#[fg=${THEME[lavender]},bg=${THEME[surface0]}]#{?#{==:#{pane_current_command},nvim}, 􀈿  , $terminal_icon $window_space}$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} #[fg=${THEME[surface0]},bg=${THEME[background]}]"
+tmux set -g window-status-format "$RESET#[fg=${THEME[blue]},bg=${THEME[surface0]}]#{?#{==:#{pane_current_command},nvim},  􀈿  ,  $terminal_icon $window_space}$window_number#W#[bold,nodim]#{?window_zoomed_flag,$zoom_number,$custom_pane} #[fg=${THEME[surface0]},bg=${THEME[background]}]$end_segment"
 
 #+--- Bars RIGHT ---+
-tmux set -g status-right "$current_path$git_status"
+tmux set -g status-right "$git_status$current_path"
 tmux set -g window-status-separator ""

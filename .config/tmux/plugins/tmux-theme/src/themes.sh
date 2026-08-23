@@ -69,6 +69,7 @@ case $SELECTED_THEME in
     ["red"]="#d16983"
     ["white"]="#ffffff"
     ["yellow"]="#e0af68"
+    ["mantle"]="#1E2030"
 
     ["bblack"]="#2A2F41"
     ["bblue"]="#7aa2f7"
@@ -79,6 +80,7 @@ case $SELECTED_THEME in
     ["bwhite"]="#787c99"
     ["byellow"]="#e0af68"
     ["lavender"]="#B7BDF8"
+    ["mantle"]="#1E2030"
   )
   ;;
 esac
@@ -93,4 +95,4 @@ THEME['ghmagenta']="#A371F7"
 THEME['ghred']="#d73a4a"
 THEME['ghyellow']="#d29922"
 
-RESET="#[fg=${THEME[foreground]},bg=${THEME[background]},nobold,noitalics,nounderscore,nodim]"
+RESET="#[fg=${THEME[foreground]},bg=${THEME[byellow]},nobold,noitalics,nounderscore,nodim]"

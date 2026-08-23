@@ -60,19 +60,23 @@ fi
 # Set the status indicator based on the sync mode 􀱇  􀄕  􀣱  􀬱  􀙠
 case "$SYNC_MODE" in
 1)
-  REMOTE_STATUS="$RESET#[bg=${THEME[bblack]},fg=${THEME[byellow]},bold]▊ "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[byellow]},bold]#[fg=${THEME[surface0]},bg=${THEME[byellow]}] "
+  REMOTE_END="$RESET#[bg=${THEME[byellow]},fg=${THEME[surface0]}]"
   ;;
 2)
-  REMOTE_STATUS="$RESET#[bg=${THEME[bblack]},fg=${THEME[bred]},bold]▊ 􀄕 "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bred]},bold]#[fg=${THEME[surface0]},bg=${THEME[bred]}] 􀄕 "
+  REMOTE_END="$RESET#[bg=${THEME[bred]},fg=${THEME[surface0]}]"
   ;;
 3)
-  REMOTE_STATUS="$RESET#[bg=${THEME[bblack]},fg=${THEME[bmagenta]},bold]▊ 􀱇 "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bmagenta]},bold]#[fg=${THEME[surface0]},bg=${THEME[bmagenta]}] 􀱇 "
+  REMOTE_END="$RESET#[bg=${THEME[bmagenta]},fg=${THEME[surface0]}]"
   ;;
 *)
-  REMOTE_STATUS="$RESET#[bg=${THEME[bblack]},fg=${THEME[bgreen]},bold]▊ "
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bgreen]},bold]#[fg=${THEME[surface0]},bg=${THEME[bgreen]}] "
+  REMOTE_END="$RESET#[bg=${THEME[bgreen]},fg=${THEME[surface0]}]"
   ;;
 esac
 
 if [[ -n $BRANCH ]]; then
-  echo "$REMOTE_STATUS $RESET#[bg=${THEME[bblack]}]$BRANCH "
+  echo "$REMOTE_STATUS $BRANCH $REMOTE_END"
 fi
