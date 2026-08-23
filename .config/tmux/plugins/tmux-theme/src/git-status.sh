@@ -72,7 +72,7 @@ case "$SYNC_MODE" in
   REMOTE_END="$RESET#[bg=${THEME[bmagenta]},fg=${THEME[surface0]}]"
   ;;
 *)
-  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[bgreen]},bold]#[fg=${THEME[surface0]},bg=${THEME[bgreen]}]"
+  REMOTE_STATUS="$RESET#[bg=${THEME[background]},fg=${THEME[green]},bold]#[fg=${THEME[surface0]},bg=${THEME[green]}]"
   REMOTE_END="$RESET#[bg=${THEME[bgreen]},fg=${THEME[surface0]}]"
   ;;
 esac
