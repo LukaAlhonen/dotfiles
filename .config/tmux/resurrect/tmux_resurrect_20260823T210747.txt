@@ -1,9 +1,0 @@
-pane	cfg	0	0	:	0	zsh in ~/.config/tmux	:/Users/luka/dotfiles/.config/tmux	1	nvim	:nvim
-pane	cfg	0	0	:	1	zsh in ~/.config/tmux/plugins/tmux-powerline	:/Users/luka/dotfiles/.config/tmux/plugins/tmux-powerline	0	zsh	:
-pane	cfg	1	1	:*	0	zsh in ~/.config/tmux-powerline	:/Users/luka/.config/tmux-powerline	1	nvim	:nvim
-pane	cfg	1	1	:*	1	zsh in ~/.config/tmux-powerline	:/Users/luka/.config/tmux-powerline	0	zsh	:
-pane	cfg	2	0	:-	0	zsh in ~/dotfiles	:/Users/luka/dotfiles	1	zsh	:
-window	cfg	0	:tmux	0	:	cc13,180x48,0,0[180x34,0,0,0,180x13,0,35,1]	off
-window	cfg	1	:nvim	1	:*	4c19,180x48,0,0[180x34,0,0,2,180x13,0,35,4]	:
-window	cfg	2	:zsh	0	:-	cc82,180x48,0,0,5	:
-state	cfg	

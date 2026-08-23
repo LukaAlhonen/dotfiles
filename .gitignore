@@ -2,6 +2,7 @@
 # .tmux
 tmux-continuum
 tmux-resurrect
+resurrect/
 tmux-sessionx
 tpm
 vim-tmux-navigator

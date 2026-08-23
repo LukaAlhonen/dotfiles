@@ -1,8 +1,0 @@
-pane	1	0	1	:*	0	zsh in ~/Developer/SwiftMQTT	:/Users/luka/Developer/SwiftMQTT	1	zsh	:
-pane	cfg	0	0	:-	0	zsh in ~/dotfiles/.config/tmux	:/Users/luka/dotfiles/.config/tmux	1	zsh	:
-pane	cfg	1	1	:*	0	zsh in ~/.config/sketchybar	:/Users/luka/dotfiles/.config/sketchybar	0	nvim	:nvim
-pane	cfg	1	1	:*	1	zsh in ~/dotfiles	:/Users/luka/dotfiles	1	zsh	:
-window	1	0	:zsh	1	:*	6670,180x48,0,0,11	:
-window	cfg	0	:zsh	0	:-	6673,180x48,0,0,14	:
-window	cfg	1	:sketchybar	1	:*	98a5,180x48,0,0[180x39,0,0,9,180x8,0,40,10]	off
-state	cfg	1
