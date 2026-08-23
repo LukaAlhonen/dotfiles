@@ -4,51 +4,43 @@ POPUP_OFF="sketchybar --set apple.logo popup.drawing=off"
 POPUP_CLICK_SCRIPT="sketchybar --set \$NAME popup.drawing=toggle --set \$NAME popup.topmost=on --set \$NAME popup.background.drawing=on --set \$NAME popup.background.color=$CAT_MANTLE --set \$NAME popup.background.border_color=$FOREGROUND --set \$NAME popup.background.border_width=1 --set \$NAME popup.background.corner_radius=5"
 
 apple_logo=(
-  padding_right=0
-  padding_left=0
-  icon="􀣺"
-  icon.color=$CAT_MANTLE
-  icon.background.drawing=on
-  icon.background.color=$CAT_MAUVE
-  icon.background.height=25
-  icon.background.corner_radius=5
-  icon.padding_left=7
-  icon.padding_right=7
-  icon.y_offset=1
+  icon="􀣺 "
+  icon.color=$CAT_TEXT
+  padding_right=15
   label.drawing=off
   click_script="$POPUP_CLICK_SCRIPT"
 )
 
 apple_prefs=(
-  icon="􀍟"
+  icon="??"
   icon.color=$CAT_ROSEWATER
   label="Preferences"
   click_script="open -a 'System Preferences'; $POPUP_OFF"
 )
 
 apple_activity=(
-  icon="􀊫"
+  icon="??"
   icon.color=$CAT_BLUE
   label="Activity"
   click_script="open -a 'Activity Monitor'; $POPUP_OFF"
 )
 
 apple_lock=(
-  icon="􀎠"
+  icon="??"
   icon.color=$CAT_GREEN
   label="Lock Screen"
   click_script="pmset displaysleepnow; $POPUP_OFF"
 )
 
 apple_shutdown=(
-  icon="􀆨"
+  icon="??"
   icon.color=$CAT_RED
   label="Shut Down"
   click_script="osascript -e 'tell app \"System Events\" to shut down'"
 )
 
 apple_reboot=(
-  icon="􀎀"
+  icon="??"
   icon.color=$CAT_YELLOW
   label="Reboot"
   click_script="osascript -e 'tell app \"System Events\" to restart'"

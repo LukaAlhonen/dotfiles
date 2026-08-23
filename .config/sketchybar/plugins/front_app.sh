@@ -69,5 +69,5 @@ if [ "$SENDER" = "front_app_switched" ]; then
       ICON="􃎺" COLOR=$CAT_PEACH
       ;;
   esac
-  sketchybar --set "$NAME" label="$LABEL" icon="$ICON" icon.background.color=$COLOR
+  sketchybar --set "$NAME" label="$LABEL" icon="$ICON" icon.color=$COLOR
 fi
