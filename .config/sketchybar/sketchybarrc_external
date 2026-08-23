@@ -50,7 +50,7 @@ source "$ITEM_DIR/weather_external.sh"
 
 left_bracket=(
   background.drawing=on
-  background.color=$BLACK2
+  background.color=$CAT_MANTLE
   background.corner_radius=5
   background.height=25
 )
