@@ -54,13 +54,13 @@ current_path="#($SCRIPTS_PATH/path-widget.sh #{pane_current_path})"
 
 #+--- Bars LEFT ---+
 # Session name
-tmux set -g status-left "$RESET#[bg=${THEME[bblack]},fg=${THEME[bred]}]#{?client_prefix,▊ ,#[dim]#[fg=${THEME[bwhite]}]▊ }$RESET#[bg=${THEME[bblack]},fg=${THEME[bred]}]#{?client_prefix,􁹜  ,#[dim]#[fg=${THEME[bwhite]}]􁹛  }#[bold,nodim]#S$hostname $RESET "
+tmux set -g status-left "$RESET#{#[fg=${THEME[surface0]}] }$RESET#[bg=${THEME[bred]},fg=${THEME[surface0]}]#{?client_prefix, 􁹜  ,#[bg=${THEME[bwhite]}] 􁹛  }#[bold,nodim]#S #[fg=${THEME[surface0]},bg=${THEME[background]}]$RESET"
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "$RESET #[fg=${THEME[blue]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},nvim},▊ 􀉀  ,▊ $active_terminal_icon $window_space}#[fg=${THEME[blue]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
+tmux set -g window-status-current-format "$RESET#[fg=${THEME[surface0]},bg=${THEME[blue]}]#{?#{==:#{pane_current_command},nvim}, 􀉀  , $active_terminal_icon $window_space}#[fg=${THEME[surface0]},bold,nodim]$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
 # Unfocused
-tmux set -g window-status-format "$RESET #[fg=${THEME[lavender]},bg=${THEME[bblack]}]#{?#{==:#{pane_current_command},nvim},▊ 􀈿  ,▊ $terminal_icon $window_space}$window_number#W#[nobold,dim]#{?window_zoomed_flag,$zoom_number,$custom_pane} "
+tmux set -g window-status-format "$RESET#[fg=${THEME[lavender]},bg=${THEME[surface0]}]#{?#{==:#{pane_current_command},nvim}, 􀈿  , $terminal_icon $window_space}$window_number#W#[nobold]#{?window_zoomed_flag,$zoom_number,$custom_pane} #[fg=${THEME[surface0]},bg=${THEME[background]}]"
 
 #+--- Bars RIGHT ---+
 tmux set -g status-right "$current_path$git_status"

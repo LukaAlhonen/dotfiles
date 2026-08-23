@@ -26,6 +26,7 @@ case $SELECTED_THEME in
     ["bwhite"]="#787c99"
     ["byellow"]="#e0af68"
     ["lavender"]="#B7BDF8"
+    ["surface0"]="#363A4F"
   )
   ;;
 
@@ -51,6 +52,7 @@ case $SELECTED_THEME in
     ["bwhite"]="#F4DBD6"
     ["byellow"]="#F5A97F"
     ["lavender"]="#B7BDF8"
+    ["surface0"]="#363A4F"
   )
   ;;
 

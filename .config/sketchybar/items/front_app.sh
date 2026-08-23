@@ -3,9 +3,15 @@
 front_app=(
   script="$PLUGIN_DIR/front_app.sh"
   label.color=$CAT_TEXT
-  icon.color=$CAT_YELLOW
+  icon.color=$CAT_MANTLE
+  icon.background.drawing=on
+  icon.background.color=$CAT_YELLOW
+  icon.background.height=25
+  icon.background.corner_radius=5
   label.padding_right=7
+  label.padding_left=7
   icon.padding_left=7
+  icon.padding_right=8
   icon.y_offset=1
   label.y_offset=1
   background.drawing=on

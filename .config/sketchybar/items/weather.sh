@@ -3,9 +3,14 @@
 weather=(
     # icon=􀇔
     icon="􀇕"
-    icon.color=$CAT_YELLOW
+    icon.color=$CAT_MANTLE
+    icon.background.drawing=on
+    icon.background.color=$CAT_YELLOW
+    icon.background.height=25
+    icon.background.corner_radius=5
     label.color=$CAT_TEXT
     label.padding_right=7
+    label.padding_left=7
     icon.padding_left=7
 
     label.y_offset=1

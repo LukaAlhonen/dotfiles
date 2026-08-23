@@ -14,7 +14,7 @@ SPOTIFY_JSON="$INFO"
 update_track() {
     source "$HOME/.config/sketchybar/colors.sh"
     if [[ -z $SPOTIFY_JSON ]]; then
-        sketchybar --set $NAME icon.color=$CAT_GREEN background.color=$BLACK2 label.drawing=yes
+        sketchybar --set $NAME icon.background.color=$CAT_GREEN background.color=$CAT_MANTLE label.drawing=yes
         return
     fi
 
@@ -44,14 +44,14 @@ update_track() {
                 ARTIST="${ARTIST:0:$((MAX_LENGTH - TRACK_LENGTH - 1))}?"
             fi
         fi
-        sketchybar --set $NAME label="${TRACK} – ${ARTIST}" label.drawing=yes icon.color=$CAT_GREEN
+        sketchybar --set $NAME label="${TRACK} – ${ARTIST}" label.drawing=yes icon.background.color=$CAT_GREEN
 
     elif [ $PLAYER_STATE = "Paused" ]; then
-        sketchybar --set $NAME icon.color=$CAT_YELLOW
+        sketchybar --set $NAME icon.background.color=$CAT_YELLOW
     elif [ $PLAYER_STATE = "Stopped" ]; then
-        sketchybar --set $NAME icon.color=$CAT_RED
+        sketchybar --set $NAME icon.background.color=$CAT_RED
     else
-        sketchybar --set $NAME icon.color=$CAT_GREEN
+        sketchybar --set $NAME icon.background.color=$CAT_GREEN
     fi
 }
 
