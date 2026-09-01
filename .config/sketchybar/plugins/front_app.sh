@@ -12,37 +12,37 @@ if [ "$SENDER" = "front_app_switched" ]; then
   LABEL=$INFO
   case "$INFO" in
     "WezTerm")
-      ICON="􁹜" COLOR=$CAT_BLUE
+      ICON="􁹜 " COLOR=$CAT_BLUE
       ;;
     "Steam Helper")
-      ICON="􀛹" COLOR=$CAT_BLUE LABEL="Steam"
+      ICON="􀛹 " COLOR=$CAT_BLUE LABEL="Steam"
       ;;
     "Steam")
-      ICON="􀛹" COLOR=$CAT_BLUE LABEL="Steam"
+      ICON="􀛹 " COLOR=$CAT_BLUE LABEL="Steam"
       ;;
     "Balatro")
-      ICON="􀊵" COLOR=$CAT_SAPPHIRE
+      ICON="􀊵 " COLOR=$CAT_SAPPHIRE
       ;;
     "Zed")
-      ICON="􀋨" COLOR=$CAT_YELLOW
+      ICON="􀋨 " COLOR=$CAT_YELLOW
       ;;
     "Docker Desktop")
-      ICON="􀐟" COLOR=$CAT_BLUE
+      ICON="􀐟 " COLOR=$CAT_BLUE
       ;;
     "Safari")
-      ICON="􀎭" COLOR=$CAT_MAUVE
+      ICON="􀎭 " COLOR=$CAT_MAUVE
       ;;
     "Spotify")
-      ICON="􂙩" COLOR=$CAT_GREEN
+      ICON="􂙩 " COLOR=$CAT_GREEN
       ;;
     "Xcode")
-      ICON="􀙅" COLOR=$CAT_MAUVE
+      ICON="􀙅 " COLOR=$CAT_MAUVE
       ;;
     "Finder")
-      ICON="􀈖" COLOR=$CAT_MAUVE
+      ICON="􀈖 " COLOR=$CAT_MAUVE
       ;;
     "System Settings")
-      ICON="􀍟" COLOR=$CAT_MAUVE
+      ICON="􀍟 " COLOR=$CAT_MAUVE
       ;;
     "ChatGPT")
       ICON="􀣳" COLOR=$CAT_TEAL

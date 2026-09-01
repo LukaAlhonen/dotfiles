@@ -6,13 +6,17 @@ ITEM_DIR="$CONFIG_DIR/items"
 
 sketchybar --bar \
   position=top \
-  height=32 \
+  height=35 \
   blur_radius=0 \
-  color=$CAT_BAR_COLOR \
+  color=$CAT_MANTLE \
   topmost=off \
-  padding_left=10 \
-  padding_right=10 \
+  padding_left=0 \
+  padding_right=5 \
   notch_width=188 \
+  corner_radius=8 \
+  shadow=on \
+  margin=5 \
+  y_offset=5 \
   display=main
 
 # Defaults
@@ -38,24 +42,27 @@ source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
 
 # Center
-source "$ITEM_DIR/spotify_external.sh"
+source "$ITEM_DIR/clock_external.sh"
 
 # Right
-source "$ITEM_DIR/clock.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/brew.sh"
 source "$ITEM_DIR/docker.sh"
 source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/weather_external.sh"
+source "$ITEM_DIR/spotify_external.sh"
 
 left_bracket=(
   background.drawing=on
-  background.color=$CAT_MANTLE
+  background.border_width=2
+  background.color=$CAT_SURFACE0
+  background.border_color=$CAT_SURFACE1
+  background.corner_radius=5
   background.corner_radius=5
   background.height=25
 )
 
-sketchybar --add bracket left.bracket volume.icon docker brew battery clock \
+sketchybar --add bracket left.bracket volume.icon docker brew battery \
            --set left.bracket "${left_bracket[@]}"
 
 ##### Force all scripts to run the first time (never do this in a script) #####

@@ -10,6 +10,7 @@ brew=(
   padding_left=0
   label.y_offset=1
   icon.y_offset=1
+  update_freq=216000 # run every hour
   script="$PLUGIN_DIR/brew.sh"
 )
 

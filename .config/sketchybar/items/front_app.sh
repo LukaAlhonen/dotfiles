@@ -9,11 +9,12 @@ front_app=(
   icon.y_offset=1
   label.y_offset=1
   background.drawing=on
-  background.color=$CAT_MANTLE
+  background.border_width=2
+  background.color=$CAT_SURFACE0
+  background.border_color=$CAT_SURFACE1
   background.corner_radius=5
   background.height=25
 )
-
 sketchybar --add item chevron left \
            --set chevron icon="􀆊 " label.drawing=off icon.color=$CAT_TEXT icon.y_offset=1 \
            --add item front_app left \

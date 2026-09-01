@@ -8,10 +8,10 @@ sketchybar --bar \
   position=top \
   height=32 \
   blur_radius=0 \
-  color=$CAT_BAR_COLOR \
+  color=$CAT_MANTLE \
   topmost=off \
-  padding_left=15 \
-  padding_right=23 \
+  padding_left=8 \
+  padding_right=8 \
   notch_width=188 \
   display=main
 
@@ -40,7 +40,7 @@ source "$ITEM_DIR/weather.sh"
 
 
 # Right
-source "$ITEM_DIR/clock.sh"
+source "$ITEM_DIR/clock_internal.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/brew.sh"
 source "$ITEM_DIR/docker.sh"
@@ -49,12 +49,14 @@ source "$ITEM_DIR/spotify.sh"
 
 right_bracket=(
   background.drawing=on
-  background.color=$CAT_MANTLE
+  background.border_width=2
+  background.color=$CAT_SURFACE0
+  background.border_color=$CAT_SURFACE1
   background.corner_radius=5
   background.height=25
 )
 
-sketchybar --add bracket right.bracket volume.icon docker brew battery clock \
+sketchybar --add bracket right.bracket volume.icon docker brew battery \
            --set right.bracket "${right_bracket[@]}"
 
 ##### Force all scripts to run the first time (never do this in a script) #####

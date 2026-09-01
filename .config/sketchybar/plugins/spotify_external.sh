@@ -14,7 +14,7 @@ SPOTIFY_JSON="$INFO"
 update_track() {
     source "$HOME/.config/sketchybar/colors.sh"
     if [[ -z $SPOTIFY_JSON ]]; then
-        sketchybar --set $NAME icon.color=$CAT_GREEN background.color=$BLACK2 label.drawing=yes
+        sketchybar --set $NAME icon.color=$CAT_GREEN background.color=$CAT_SURFACE0 label.drawing=yes
         return
     fi
 
